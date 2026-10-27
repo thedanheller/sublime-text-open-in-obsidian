@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "Open in Obsidian: Current File",
+        "command": "open_in_obsidian"
+    }
+]

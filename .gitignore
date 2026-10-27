@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+*.cache
+package-metadata.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude Code
+.claude/settings.local.json

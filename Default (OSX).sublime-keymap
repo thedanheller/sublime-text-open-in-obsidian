@@ -1,0 +1,7 @@
+[
+    {
+        "keys": ["super+shift+o"],
+        "command": "open_in_obsidian",
+        "context": [{ "key": "selector", "operator": "equal", "operand": "text.html.markdown" }]
+    }
+]

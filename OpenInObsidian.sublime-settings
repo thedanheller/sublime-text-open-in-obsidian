@@ -1,0 +1,15 @@
+{
+    // File extensions (case-insensitive) treated as Markdown.
+    "extensions": [".md", ".markdown", ".mdown", ".mdx"],
+
+    // Save a modified file before opening it in Obsidian.
+    "save_before_open": true,
+
+    // Command that launches Obsidian; the file path is appended as the last
+    // argument. Leave null for automatic detection:
+    //   macOS    open -a Obsidian
+    //   Windows  %LOCALAPPDATA%\Programs\Obsidian\Obsidian.exe
+    //   Linux    obsidian (PATH), or the Flatpak md.obsidian.Obsidian
+    // Example: ["/opt/Obsidian.AppImage"]
+    "obsidian_command": null
+}
