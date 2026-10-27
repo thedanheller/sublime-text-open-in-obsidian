@@ -37,7 +37,7 @@ Clone this repository into the Sublime Text `Packages` directory under the name 
 
 ```sh
 cd "<Sublime Text Packages dir>"
-git clone https://github.com/<user>/sublime-text-open-in-obsidian OpenInObsidian
+git clone https://github.com/thedanheller/sublime-text-open-in-obsidian OpenInObsidian
 ```
 
 Open the directory with `Preferences > Browse Packages…`.
