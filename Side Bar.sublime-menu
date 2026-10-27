@@ -1,7 +1,7 @@
 [
     {
         "caption": "Open in Obsidian",
-        "command": "open_in_obsidian",
+        "command": "open_in_obsidian_menu",
         "args": { "paths": [] }
     }
 ]

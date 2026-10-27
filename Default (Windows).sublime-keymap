@@ -1,7 +1,11 @@
 [
-    {
-        "keys": ["ctrl+alt+o"],
-        "command": "open_in_obsidian",
-        "context": [{ "key": "selector", "operator": "equal", "operand": "text.html.markdown" }]
-    }
+    // Suggested binding for Open in Obsidian. Copy it to
+    // Preferences > Package Settings > Open in Obsidian > Key Bindings
+    // to enable it.
+    //
+    // {
+    //     "keys": ["ctrl+alt+o"],
+    //     "command": "open_in_obsidian",
+    //     "context": [{ "key": "selector", "operator": "equal", "operand": "text.html.markdown" }]
+    // }
 ]

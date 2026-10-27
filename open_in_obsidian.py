@@ -124,3 +124,12 @@ class OpenInObsidianCommand(sublime_plugin.WindowCommand):
             view = self.view_for(group, index)
             candidates = [view.file_name()] if view else []
         return [p for p in candidates if is_markdown(p, settings)]
+
+
+class OpenInObsidianMenuCommand(OpenInObsidianCommand):
+    """Menu entry variant, hidden when `show_in_context_menus` is false."""
+
+    def is_visible(self, paths=None, group=-1, index=-1):
+        return bool(get_settings().get("show_in_context_menus", True)) and super().is_visible(
+            paths, group, index
+        )

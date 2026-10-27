@@ -2,6 +2,9 @@
     // File extensions (case-insensitive) treated as Markdown.
     "extensions": [".md", ".markdown", ".mdown", ".mdx"],
 
+    // Show "Open in Obsidian" in the editor, tab and sidebar context menus.
+    "show_in_context_menus": true,
+
     // Save a modified file before opening it in Obsidian.
     "save_before_open": true,
 

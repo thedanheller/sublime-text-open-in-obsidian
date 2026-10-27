@@ -2,6 +2,6 @@
     { "caption": "-", "id": "open_in_obsidian_separator" },
     {
         "caption": "Open in Obsidian",
-        "command": "open_in_obsidian"
+        "command": "open_in_obsidian_menu"
     }
 ]
