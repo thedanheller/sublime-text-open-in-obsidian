@@ -4,18 +4,18 @@
         "command": "open_in_obsidian"
     },
     {
-        "caption": "Preferences: Open in Obsidian Settings",
+        "caption": "Preferences: OpenInObsidian Settings",
         "command": "edit_settings",
         "args": {
             "base_file": "${packages}/OpenInObsidian/OpenInObsidian.sublime-settings",
-            "default": "// Settings in here override those in \"Open in Obsidian/OpenInObsidian.sublime-settings\"\n{\n\t$0\n}\n"
+            "default": "// Settings in here override those in \"OpenInObsidian/OpenInObsidian.sublime-settings\"\n{\n\t$0\n}\n"
         }
     },
     {
-        "caption": "Preferences: Open in Obsidian Key Bindings",
+        "caption": "Preferences: OpenInObsidian Key Bindings",
         "command": "edit_settings",
         "args": {
-            "base_file": "${packages}/OpenInObsidian/Default (${platform}).sublime-keymap",
+            "base_file": "${packages}/OpenInObsidian/Default.sublime-keymap",
             "default": "[\n\t$0\n]\n"
         }
     }

@@ -1,0 +1,18 @@
+[
+    // Sublime Text does not load this file. Copy the binding for your
+    // platform to Preferences > Package Settings > OpenInObsidian > Key Bindings.
+
+    // macOS
+    {
+        "keys": ["super+shift+o"],
+        "command": "open_in_obsidian",
+        "context": [{ "key": "selector", "operator": "equal", "operand": "text.html.markdown" }]
+    },
+
+    // Windows and Linux
+    {
+        "keys": ["ctrl+alt+o"],
+        "command": "open_in_obsidian",
+        "context": [{ "key": "selector", "operator": "equal", "operand": "text.html.markdown" }]
+    }
+]

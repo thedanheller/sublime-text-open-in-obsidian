@@ -23,7 +23,7 @@ Modified files are saved before Obsidian opens them.
 
 ## Settings
 
-`Preferences > Package Settings > Open in Obsidian > Settings`
+`Preferences > Package Settings > OpenInObsidian > Settings`
 
 | Key | Default | Purpose |
 | --- | --- | --- |
@@ -34,7 +34,7 @@ Modified files are saved before Obsidian opens them.
 
 ## Key bindings
 
-The package ships a commented suggestion. Open `Preferences > Package Settings > Open in Obsidian > Key Bindings` and add:
+`Example.sublime-keymap` lists a binding per platform. Copy the one you want to `Preferences > Package Settings > OpenInObsidian > Key Bindings`:
 
 ```json
 {
