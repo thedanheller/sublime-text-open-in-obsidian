@@ -34,7 +34,7 @@ Modified files are saved before Obsidian opens them.
 
 ## Key bindings
 
-`Example.sublime-keymap` lists a binding per platform. Copy the one you want to `Preferences > Package Settings > OpenInObsidian > Key Bindings`:
+`Example.sublime-keymap` lists a binding per platform. Open `Preferences > Package Settings > OpenInObsidian > Key Bindings`, which shows the examples beside your own key bindings file, and copy the one you want:
 
 ```json
 {

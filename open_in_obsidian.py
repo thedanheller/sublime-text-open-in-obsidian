@@ -10,10 +10,6 @@ import sublime_plugin
 SETTINGS_FILE = "OpenInObsidian.sublime-settings"
 FLATPAK_APP_ID = "md.obsidian.Obsidian"
 
-# Windows process creation flags (subprocess.CREATE_* needs Python 3.7).
-CREATE_NO_WINDOW = 0x08000000
-CREATE_NEW_PROCESS_GROUP = 0x00000200
-
 
 def get_settings():
     return sublime.load_settings(SETTINGS_FILE)
@@ -62,16 +58,22 @@ def find_launcher(settings):
 
 def launch(path, settings):
     argv = find_launcher(settings) + [path]
-    options = {
-        "stdin": subprocess.DEVNULL,
-        "stdout": subprocess.DEVNULL,
-        "stderr": subprocess.DEVNULL,
-    }
     if sys.platform == "win32":
-        options["creationflags"] = CREATE_NO_WINDOW | CREATE_NEW_PROCESS_GROUP
+        subprocess.Popen(
+            argv,
+            stdin=subprocess.DEVNULL,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            creationflags=subprocess.CREATE_NO_WINDOW | subprocess.CREATE_NEW_PROCESS_GROUP,
+        )
     else:
-        options["start_new_session"] = True
-    subprocess.Popen(argv, **options)
+        subprocess.Popen(
+            argv,
+            stdin=subprocess.DEVNULL,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            start_new_session=True,
+        )
 
 
 class OpenInObsidianCommand(sublime_plugin.WindowCommand):
